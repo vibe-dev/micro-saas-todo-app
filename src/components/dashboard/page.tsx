@@ -19,7 +19,7 @@ export function DashboardPageHeader({
   return (
     <header
       className={cn([
-        'px-6 py-3 border-b border-border flex items-center justify-between',
+        'px-6 h-12 border-b border-border flex items-center justify-between',
         className,
       ])}
     >
@@ -34,7 +34,7 @@ export function DashboardPageHeaderTitle({
 }: DashboardPageGenericProps) {
   return (
     <span
-      className={cn(['text-sm text-muted-foreground uppercase', className])}
+      className={cn(['text-xs text-muted-foreground uppercase', className])}
     >
       {children}
     </span>

@@ -38,7 +38,7 @@ export function UserDropdown({ user }: UserDropdownProps) {
 
           <div className="flex flex-col flex-1 space-y-1 text-left">
             {user.name && (
-              <p className="text-sm font-medium leading-none">{user.name}</p>
+              <p className="text-xs font-medium leading-none">{user.name}</p>
             )}
             <p className="text-xs leading-none text-muted-foreground">
               {user.email}

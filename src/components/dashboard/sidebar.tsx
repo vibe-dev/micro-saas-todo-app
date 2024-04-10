@@ -14,7 +14,7 @@ export function DashboardSidebar({
   return (
     <aside
       className={cn([
-        'border-r border-border flex flex-col space-y-6',
+        'border-r border-border flex flex-col space-y-6 bg-secondary/5',
         className,
       ])}
     >
@@ -28,7 +28,12 @@ export function DashboardSidebarHeader({
   children,
 }: DashboardSidebarGenericProps) {
   return (
-    <header className={cn(['px-6 py-3 border-b border-border', className])}>
+    <header
+      className={cn([
+        'px-6 h-12 flex items-center border-b border-border',
+        className,
+      ])}
+    >
       {children}
     </header>
   )
@@ -69,7 +74,7 @@ export function DashboardSidebarNavHeaderTitle({
   return (
     <div
       className={cn([
-        'text-xs uppercase text-muted-foreground ml-3',
+        'text-[0.6rem] uppercase text-muted-foreground ml-3',
         className,
       ])}
     >
