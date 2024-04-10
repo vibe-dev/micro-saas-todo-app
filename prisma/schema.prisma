@@ -47,6 +47,11 @@ model User {
   emailVerified DateTime?
   image         String?
 
+  stripeCustomerId         String?
+  stripeSubscriptionId     String?
+  stripeSubscriptionStatus String?
+  stripePriceId            String?
+
   accounts Account[]
   sessions Session[]
   todos    Todo[]
